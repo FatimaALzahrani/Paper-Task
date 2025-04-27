@@ -1,0 +1,13 @@
+<!doctype html><html lang="ar"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="favicon.ico"><title>إدارة المهام البحثية - متلازمة داون</title><script>// هذا السكريبت يساعد في حل مشكلة الصفحة الفارغة عند تحميل الموقع مباشرة
+    (function() {
+      // إذا كان المستخدم يحاول الوصول إلى مسار محدد (غير الصفحة الرئيسية)
+      const path = window.location.pathname.slice(1);
+      if (path !== '' && path !== 'index.html') {
+        // إعادة توجيه إلى الصفحة الرئيسية مع إضافة المسار كهاش
+        window.location.replace(
+          window.location.origin + 
+          window.location.pathname.replace(path, '') + 
+          '#/' + path
+        );
+      }
+    })();</script><script defer="defer" src="assets/js/chunk-vendors.0665dcd6.js"></script><script defer="defer" src="assets/js/app.7e52efdc.js"></script><link href="assets/css/app.b8c1af11.css" rel="stylesheet"></head><body><noscript><strong>عذراً، موقع إدارة المهام البحثية يتطلب تفعيل JavaScript للعمل بشكل صحيح. يرجى تفعيله والمحاولة مرة أخرى.</strong></noscript><div id="app"></div></body></html>
